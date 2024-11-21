@@ -29,8 +29,8 @@ Tech Stack
 # Setup Instructions
 
 **1. Clone the Repository**
-   git clone https://github.com/adevmini/book-review.git
-   cd book-review
+   'git clone https://github.com/adevmini/book-review.git'
+   'cd book-review'
 
 **2. Backend Setup**
 Prerequisites:
@@ -46,6 +46,8 @@ Steps:
    
 *Create the database in MySQL:*
 
+   '''sql
+   
    CREATE DATABASE book_review_app;
 
    USE book_review_app;
@@ -96,13 +98,13 @@ Steps:
 *Steps:*
 
   1. Navigate to the Book-Review-App-Frontend folder:
-     cd Book-Review-App-Frontend
+     'cd Book-Review-App-Frontend'
 
   2. Install dependencies:
-     npm install
+     'npm install'
 
   3. Start the development server:
-     npm run dev
+     'npm run dev'
 
 
 
