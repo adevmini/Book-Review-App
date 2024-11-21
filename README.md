@@ -1,53 +1,47 @@
 # Book-Review-App
+
 A full-stack web application for book reviews, allowing users to sign in, sign up, view books, write reviews, and manage their own reviews. The application is built with a React frontend and a Spring Boot backend, with data stored in a MySQL database.
 
+## Features
+- **User Authentication**: Sign in and sign up pages are implemented using `SignIn.js` and `SignUp.js`.
+- **Home Page**: Displays book cards with descriptions and average ratings, implemented using `HomePage.js` and `BookCard.js`.
+- **Book Descriptions**: Each book card includes a short description and average rating, included in `BookCard.js`.
+- **Review Button**: Each book card has a "Review" button, which navigates to a detailed review page.
+- **Review Page**: Users can add their reviews for a specific book on the review page (`ReviewPage.js`).
+- **View Others Reviews**: Ability to see reviews by other users for a specific book on the review page.
+- **Profile Page**: A dedicated profile page for users to view all their reviews (`ProfilePage.js`).
+- **Update and Delete Reviews**: Users can update or delete their own reviews from the profile page.
+- **Sorting Books by Rating**: Books are sorted by average rating on the home page (`HomePage.js`).
+- **Sorting Reviews by Date**: Reviews are sorted by the most recent on the profile page (`ProfilePage.js`).
+
+## Tech Stack
+- **Frontend**: React, Axios, Material-UI
+- **Backend**: Spring Boot, Java
+- **Database**: MySQL
+- **Build Tools**: Maven, npm
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+  - git clone https://github.com/adevmini/book-review.git
+  - cd book-review
 
 
-# Features
+### 2. Backend Setup
 
-1. User Authentication: Sign in and sign up pages are implemented using SignIn.js and SignUp.js.
-2. Home Page: Displays book cards with descriptions and average ratings, implemented using HomePage.js and BookCard.js.
-3. Book Descriptions: Each book card includes a short description and average rating, included in BookCard.js.
-4. Review Button: Each book card has a "Review" button, which navigates to a detailed review page.
-5. Review Page: Users can add their reviews for a specific book on the review page (ReviewPage.js).
-6. View Others Reviews: Ability to see reviews by other users for a specific book on the review page.
-7. Profile Page: A dedicated profile page for users to view all their reviews (ProfilePage.js).
-8. Update and Delete Reviews: Users can update or delete their own reviews from the profile page.
-9. Sorting Books by Rating: Books are sorted by average rating on the home page (HomePage.js).
-10. Sorting Reviews by Date: Reviews are sorted by the most recent on the profile page (ProfilePage.js).
+#### Prerequisites:
+- Install IntelliJ IDEA.
+- Install Java 17 or later.
+- Install MySQL.
 
+#### Steps:
+1. Open the backend project in IntelliJ IDEA:
+   - Navigate to the `backend` folder.
+   - Open it as a Maven project.
 
-
-Tech Stack
-
-  Frontend: React, Axios, Material-UI
-  Backend: Spring Boot, Java
-  Database: MySQL
-  Build Tools: Maven, npm
-
-
-# Setup Instructions
-
-**1. Clone the Repository**
-   'git clone https://github.com/adevmini/book-review.git'
-   'cd book-review'
-
-**2. Backend Setup**
-Prerequisites:
-   Install IntelliJ IDEA.
-   Install Java 17 or later.
-   Install MySQL.
-
-Steps:
-   Open the backend project in IntelliJ IDEA:
-   Navigate to the backend folder.
-   Open it as a Maven project.
-   
-   
-*Create the database in MySQL:*
-
-   '''sql
-   
+2. Create the database in MySQL:
+   ```sql
    CREATE DATABASE book_review_app;
 
    USE book_review_app;
@@ -82,6 +76,7 @@ Steps:
    ('The Great Gatsby', 'F. Scott Fitzgerald', 5, 'A masterpiece of 20th-century literature.', 1),
    ('To Kill a Mockingbird', 'Harper Lee', 4, 'A powerful story about justice and morality.', 2);
 
+   
 
 *Run the backend application:*
    Start the MySQL server.
