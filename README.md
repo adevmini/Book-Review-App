@@ -24,8 +24,8 @@ A full-stack web application for book reviews, allowing users to sign in, sign u
 
 ### 1. Clone the Repository
 
-  - git clone https://github.com/adevmini/book-review.git
-  - cd book-review
+  `git clone https://github.com/adevmini/book-review.git`
+  `cd book-review`
 
 
 ### 2. Backend Setup
@@ -79,15 +79,15 @@ A full-stack web application for book reviews, allowing users to sign in, sign u
    
 
 *Run the backend application:*
-   Start the MySQL server.
-   In IntelliJ, locate the Book-Review-App-Backend and run it.
+   - Start the MySQL server.
+   - In IntelliJ, locate the Book-Review-App-Backend and run it.
 
 
 
 **3. Frontend Setup**
 
 *Prerequisites:*
-  Install Node.js and npm.
+  - Install Node.js and npm.
 
   
 *Steps:*
